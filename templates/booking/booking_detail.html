@@ -1,0 +1,28 @@
+
+{% extends "base.html" %}
+
+{% block content %}
+
+<div class="container-fluid">
+    <div class="row">
+   <div class="col-md-6">
+    <h1> Your Bookings</h1>
+   </div>
+   <p class="card-text">First Name: {{ bookings.first_name }}</p>
+   <p class="card-text">Last Name: {{ bookings.last_name }}</p>
+   <p class="card-text">Email Address: {{ bookings.email }}</p>
+   <p class="card-text">Phone: {{ bookings.phone }}</p>
+   <p class="card-text">Date: {{ bookings.date }}</p>
+   <p class="card-text">Time: {{ bookings.time }}</p>
+   <p class="card-text">No. of Guests: {{ bookings.guests_number }}</p>
+   <p class="card-text">Special Message: {{ bookings.special_message }}</p>
+   <div class="btn-group btn-group-justified">
+       <a href="{% url 'home' %}" class="btn btn-info">Edit</a>
+       <a href="{% url 'home' %}" class="btn btn-danger">Delete</a>
+                
+    </div>
+    
+</div>
+{%endblock%}
+
+
