@@ -1,0 +1,22 @@
+
+{% extends "base.html" %}
+
+{% block content %}
+
+<div class="container-fluid">
+    <div class="row">
+        <form method="post">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <br>
+            <input type="submit" value="Save Booking" class="btn btn-dark">
+            <a href="{% url 'home' %}" class="btn btn-dark">Back</a>
+        </form>
+       
+                
+    </div>
+    
+</div>
+{%endblock%}
+
+
