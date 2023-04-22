@@ -20,7 +20,9 @@ class HomePage(generic.ListView):
 class BookingCreation(LoginRequiredMixin, generic.CreateView):
     model = Booking
     template_name = 'booking/booking_page.html'
-    fields = ['first_name', 'last_name', 'email', 'phone', 'date', 'time', 'guests_number', 'special_message']
+    fields = ['first_name', 'last_name', 'email',
+              'phone', 'date', 'time', 'guests_number',
+              'special_message']
     success_url = reverse_lazy('booking_detail')
 
     def form_valid(self, form):
@@ -34,3 +36,18 @@ class BookingList(LoginRequiredMixin, generic.ListView):
     model = Booking
     template_name = 'booking/booking_detail.html'
     context_object_name = 'bookings'
+
+
+class BookingUpdate(LoginRequiredMixin, generic.UpdateView):
+    model = Booking
+    template_name = 'booking_form.html'
+    fields = ['first_name', 'last_name', 'email',
+              'phone', 'date', 'time',
+              'guests_number', 'special_message']
+    success_url = reverse_lazy('booking_list')
+
+
+class BookingDelete(LoginRequiredMixin, generic.DeleteView):
+    model = Booking
+    template_name = 'booking_confirm_delete.html'
+    success_url = reverse_lazy('booking_list')

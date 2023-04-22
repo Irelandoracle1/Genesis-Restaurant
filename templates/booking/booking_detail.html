@@ -6,22 +6,51 @@
 <div class="container-fluid">
     <div class="row">
    <div class="col-md-6">
-    <h1> Your Bookings</h1>
+    <h1 class="text-center"> Your Bookings</h1>
    </div>
-   <p class="card-text">First Name: {{ bookings.first_name }}</p>
-   <p class="card-text">Last Name: {{ bookings.last_name }}</p>
-   <p class="card-text">Email Address: {{ bookings.email }}</p>
-   <p class="card-text">Phone: {{ bookings.phone }}</p>
-   <p class="card-text">Date: {{ bookings.date }}</p>
-   <p class="card-text">Time: {{ bookings.time }}</p>
-   <p class="card-text">No. of Guests: {{ bookings.guests_number }}</p>
-   <p class="card-text">Special Message: {{ bookings.special_message }}</p>
-   <div class="btn-group btn-group-justified">
-       <a href="{% url 'home' %}" class="btn btn-info">Edit</a>
-       <a href="{% url 'home' %}" class="btn btn-danger">Delete</a>
-                
-    </div>
+   <ul>
+
     
+    <table align="center" style="width:1000px;" class="table table-striped table-bordered">
+
+       <thead>
+        <th>Booking Id</th>
+        <th>First Name</th>
+        <th>Last Name</th>
+        <th> Number of Guests</th>
+        <th> Date</th>
+        <th>Time</th>
+        <th>Action</th>
+       </thead>
+        <tbody>
+            {% for booking in bookings %}
+        <tr>
+            
+           <td>{{ booking.id }}</td> 
+           <td>{{ booking.first_name }}</td>
+           <td>{{ booking.last_name }}</td>
+           <td> {{ booking.guests_number }}</td>
+           <td> {{ booking.date }}</td>
+           <td>{{ booking.time }}</td>
+          <td> 
+        <a href="{% url 'home'  %}" class="btn btn-info">Edit Booking</a>
+         <a href="{% url 'home'  %}" class="btn btn-danger">Delete Booking</a>
+        </td>
+    {% empty %}
+    <td>You don't have any bookings.</td>
+    
+        </tr>
+        {% endfor %}
+        </tbody>
+    
+    </table>
+
+    
+    
+    
+ 
+
+
 </div>
 {%endblock%}
 
