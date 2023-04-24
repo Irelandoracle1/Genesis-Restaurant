@@ -44,6 +44,9 @@
                     </li>
                     {% else %}
                     <li class="nav-item">
+                        <a class="nav-link text-white" href="">Menu</a>
+                    </li>
+                    <li class="nav-item">
                         <a class="nav-link text-white" href="{% url 'booking_create' %}">Make Booking</a>
                     </li>
                     <li class="nav-item">
@@ -78,14 +81,37 @@
         <!-- Content Goes here -->
         {% endblock content %}
     </main>
+<div class="container">
+    <div class="row">
+    <div class="col-md-4 col-sm-12">
+      <h3>About Us</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+        eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+        ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip</p>  
+    </div>
+    <div align="center" class="col-md-4 col-sm-12">
+        <h3>Opening Hours</h3> 
+        <p>Monday - Friday ------- 8.00am - 10pm </p> 
+        <p>Saturdays ------- 10.00am - 9pm</p>
+        <p>Sundays -------- closed</p>
+      </div>
+      <div align='center' class="col-md-4 col-sm-12">
+        <h3>Contact</h3>  
+        <p>Address: Dublin, Ireland</p>
+        <p>Phone Number: 00353123</p>
+        <p>Email: info@genesirestaurant.com</p>
+      </div>
+
+    </div>
+</div>
 
     <!-- Footer -->
     <footer style="background:black;" class="footer mt-auto py-3 dark-bg">
         <p class="m-0 text-center text-white">Made by Code Oluwaseyi Badero</p>
-        <p class="m-0 text-center text-white">Follow us: <i class="fab fa-facebook-square ms-3"></i>
-            <i class="fab fa-twitter-square ms-3"></i>
-            <i class="fab fa-instagram-square ms-3"></i>
-            <i class="fab fa-youtube-square ms-3"></i></p>
+        <a class="m-0 text-center text-white">Follow us: <a href='https://facebook.com'><i class="fab fa-facebook-square ms-3"></i></a>
+            <a href='https://twitter.com'> <i class="fab fa-twitter-square ms-3"></i></a>
+            <a href='https://instagram.com'><i class="fab fa-instagram-square ms-3"></i></a>
+            <a href='https://youtube.com'><i class="fab fa-youtube-square ms-3"></i></a>
     </footer>
 
     <script>
