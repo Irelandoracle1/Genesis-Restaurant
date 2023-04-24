@@ -6,7 +6,9 @@
 
 {% block content %}
 <h1>{% trans "Sign Out" %}</h1>
-
+<div class="container .account-pages">
+  <div class="row">
+    <div class="col-md-12">
 <p>{% trans 'Are you sure you want to sign out?' %}</p>
 
 <form method="post" action="{% url 'account_logout' %}">
@@ -17,5 +19,10 @@
   <button type="submit">{% trans 'Sign Out' %}</button>
 </form>
 
+</div>
+</div>
+
+</div>
+<div><br><br></div>
 
 {% endblock %}

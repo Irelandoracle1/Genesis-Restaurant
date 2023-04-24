@@ -13,6 +13,13 @@ class HomePage(generic.ListView):
     model = Booking
     template_name = 'booking/index.html'
 
+# This is the MenuPage View
+
+
+class MenuPage(generic.ListView):
+    model = Booking
+    template_name = 'booking/restaurant_menu.html'
+
 
 # This is the Booking Creation Page
 
