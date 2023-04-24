@@ -26,3 +26,13 @@ h1, h2, h3, #p-intro {
 #accounts-pages{
   margin-right: 500px;
 }
+
+.home-menu{
+    width: 300px;
+    height: 250px;
+    margin-top: 5px;
+}
+
+#first-footer{
+    text-align: center;
+}
