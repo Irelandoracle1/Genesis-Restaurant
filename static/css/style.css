@@ -12,9 +12,16 @@ margin:auto;
 text-align:center;
 }
 #welcome{height: 400px; 
-background-image:url('https://res.cloudinary.com/dmpcp1fbi/image/upload/v1682024772/cld-sample-4.jpg');
+background-image:url('https://res.cloudinary.com/dmpcp1fbi/image/upload/v1682432255/images/rb8pwvppyyndke8znl9g.png');
 background-repeat: no-repeat;
 }
+
+#hero-image{height: 400px; 
+    background-image:url('https://res.cloudinary.com/dmpcp1fbi/image/upload/v1682432610/images/yugcciyw7zepyz54alow.png');
+    background-repeat: no-repeat;
+    
+    }
+
 #book-btn{
     margin-left:500px;
 }
