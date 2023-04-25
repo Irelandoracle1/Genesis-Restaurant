@@ -40,14 +40,14 @@
                         <a class="nav-link text-white" href="{% url 'booking_detail' %}">Manage Booking</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="{% url 'account_logout' %}">Logout</a>
+                        <a class="nav-link text-white" href="{% url 'account_logout' %}">Logout</a>
                     </li>
                     {% else %}
                     <li class="nav-item">
-                        <a class="nav-link text-white" href="">Menu</a>
+                        <a class="nav-link text-white" href="{% url 'restaurant_menu' %}">Menu</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-white" href="{% url 'booking_create' %}">Make Booking</a>
+                        <a class="nav-link text-white" href="ç">Bookings</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link text-white" href="{% url 'account_signup' %}">Register</a>
@@ -85,9 +85,9 @@
     <div class="row">
     <div class="col-md-4 col-sm-12">
       <h3>About Us</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-        eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-        ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip</p>  
+      <p>Genesis Restaurant is a Nigerian Food Restaurant(Fictional) 
+        <br>Located in Dublin, Ireland. It offers seamless online booking<br>
+         functionality, allowing customers to reserve a table with just a few clicks.</p>  
     </div>
     <div id="first-footer" class="col-md-4 col-sm-12">
         <h3>Opening Hours</h3> 

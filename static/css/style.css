@@ -3,7 +3,7 @@ html, body {
     max-width: 100%;
     overflow-x: hidden;
     height: 100%;
-    background: white;
+    background: lavender;
     
 }
 
@@ -14,16 +14,19 @@ text-align:center;
 #welcome{height: 400px; 
 background-image:url('https://res.cloudinary.com/dmpcp1fbi/image/upload/v1682432255/images/rb8pwvppyyndke8znl9g.png');
 background-repeat: no-repeat;
+background-size:cover;
+
 }
 
 #hero-image{height: 400px; 
     background-image:url('https://res.cloudinary.com/dmpcp1fbi/image/upload/v1682432610/images/yugcciyw7zepyz54alow.png');
     background-repeat: no-repeat;
+    background-size: cover;
     
     }
 
 #book-btn{
-    margin-left:500px;
+    margin: auto;
 }
 
 h1, h2, h3, #p-intro {

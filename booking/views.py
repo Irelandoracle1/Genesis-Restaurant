@@ -44,6 +44,10 @@ class BookingList(LoginRequiredMixin, generic.ListView):
     template_name = 'booking/booking_detail.html'
     context_object_name = 'bookings'
 
+    def get_queryset(self):
+        logged_user = self.request.user
+        return Booking.objects.filter(user=logged_user)
+
 
 class BookingUpdate(LoginRequiredMixin, generic.UpdateView):
     model = Booking
