@@ -7,7 +7,7 @@ interface and responsive design, customers can easily navigate the menu
 and select their preferred dining experience. Genesis Restaurant's website
 Targets Nigerians that lives in Ireland, in order to give them an home away
 from home.
-<img src="assets/images/">
+<img src="https://github.com/Irelandoracle1/Genesis-Restaurant/blob/main/assets/images/responsiveimage2.jpg">
 
  [View Live Project Here](https://genesisrestaurant234.herokuapp.com/)
 
@@ -47,33 +47,32 @@ from home.
 
  ### User stories 
 
-    -   #### First Time Visitor Goals
+    -   #### Guest User's Stories
 
-        1. As a First Time Visitor, I want to easily understand the main purpose of the site and learn more about the business.
-        2. As a First Time Visitor, I want to be able to easily navigate throughout the site to find content.
-        3. As a First Time Visitor, I want to sign up for a user account to access restricted content.
-        4. As a First Time Visitor, I want to create a table booking, view booking details, and learn what changes I can make on created bookings.
-        5. As a First Time Visitor, I want to sign out of my user account at the end of the session to keep my account related details safe.
+        1. View Website Contents: As a Guest User, I can easily understand the purpose of the website and learn through the contents and site presentation
+       2. View Menu: As a Guest User, I can view the restaurant's menu online, so that I can make informed choices while booking a table. 
+       3. Site Navigation: As a Guest User, I can easily navigate through the website to easily find desired contents
+      4. Account Registration: As a Guest User, I can register for an account on the website, so that I can book a table for dining
+      5. View Social Media Pages: As a Guest User, I can navigate to restaurant's Social Media Pages, to get more information about them
         
 
-    -   #### Returning and Frequent Visitor Goals
+    -   #### Registered User's Stories
 
-        1. As a Returning and Frequent Visitor, I want to sign into my user account.
-        2. As a Returning and Frequent Visitor, I want to create a table booking, view my current and previous booking details, and alternatively edit them or delete them.
-        3. As a Returning and Frequent visitor I want to send messages and queries to the site owner.
-        4. As a Returning and Frequent visitor I want to like the restaurant services.
-        5. As a Returning and Frequent Visitor, I want to sign out of my account at the end of the session to keep my account safe.
+       1. Account Login: As Registered User, I can login to my account so I can make bookings 
+        
+       2. View Bookings: As a Registered User, I can view and manage my upcoming and past bookings in my account, so that I can keep track of my dining history 
+       
+       3.Modify or Cancel Existing Bookings: As a Registered User, I can modify or cancel my existing bookings, so that I can make changes to my dining plans if needed 
 
-    -   #### Site Administrator Goals
-        1. As a Site Administrator I would like to be able to create, view, edit and delete bookings.    
+    -   #### Site Admin's Goal
+       As a Site Admin, I can create, read, update and delete Users' bookings from an admin area
         
         
 # Layout
 -   ### Design
     -   #### Colour Scheme
-        -   The main colours in the website theme for header, background, footer and text labels are brown, yellow, and beige.
-    -   #### Typography
-        -   I used a standard Bootstrap theme with all the components and styling. Raleway and Lora are the main fonts used, Raleway for label titles and Lora for body text.
+        -   The colours used throughout the website include include: Black, Lavender and blue  
+    
     -   #### Imagery
         -   Imagery was chosen to go with the website's colour and content theme. I'm using dining and restaurant interior images with deep-toned, soothing colours and attractive graphics. For the edit, delete and logout page I'm using images with graphics that signal what will happen if user edits, deletes or signs out.
 
